@@ -68,7 +68,6 @@ a:hover, a:active{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(255,255,255, 0.7);
 	padding: .5em;
 	transform: translate3D(0,0,0);
 	-moz-transform: translate3D(0,0,0);
@@ -77,4 +76,24 @@ a:hover, a:active{
 	-moz-transition: -moz-transform .25s ease-in-out;
 	-webkit-transition: -webkit-transform .25s ease-in-out;
 	overflow: auto;
+}
+
+/*Responsive to Mobile Screens*/
+@media only screen and (max-width: 480px){
+	body{
+		font-size: 1em;
+	}
+	#content-wrapper{
+		background: pink;
+	}
+	#content-wrapper:after{
+		content: "Responsive-test"
+	}
+}
+
+@media only screen and (min-width: 481px) {
+	#content-wrapper{
+		background: rgba(255,255,255, 0.7);
+	}
+}
 }
