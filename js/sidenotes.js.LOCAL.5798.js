@@ -10,11 +10,7 @@ $(function() {
   if ( localStorage.getItem('mainData') ) {
     main.innerHTML = localStorage.getItem('mainData'); 
   }
-<<<<<<< HEAD
   
-=======
-
->>>>>>> master
   var sidebar = document.getElementById('sidebar');
   
   $(sidebar).blur(function() {
@@ -25,13 +21,9 @@ $(function() {
   if ( localStorage.getItem('sidebarData') ) {
     sidebar.innerHTML = localStorage.getItem('sidebarData'); 
   }
-<<<<<<< HEAD
 
 
 
-=======
-  
->>>>>>> master
   // to reset
   // localStorage.clear();
   
