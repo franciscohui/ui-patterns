@@ -7,17 +7,27 @@
 	<style type="text/css">
 
 		html, body{
-			font-family: arial, helvetica, sans-serif; 
+			font-family: Helvetica Neue, "Helvetica Neue", HelveticaNeue, Arial, sans-serif; 
+			background: #f6f6f6;
+			color: #444444;
 		}
+		.home{
+			text-decoration: none;
+			color: #444;
+		}
+
 		#header{
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid silver;
+			margin: 2em 0 0 0;
 		}
 		#header h1{
 			margin: 0;
+			font-size: 42px;
 		}
 		#header p{
 			margin: 0.5em 0;
-			color: gray;
+			opacity: 0.7;
+			font-size: 16px;
 		}
 		#container{
 			display: block;
@@ -34,10 +44,10 @@
 		article a{
 			font-weight: bold;
 			text-decoration: none;
-			color: rgb(2,139,165);
+			color: #529ecc;
 		}
 		article a:hover{
-			border-bottom: 1px solid rgb(2,139,165);
+			border-bottom: 1px solid #529ecc;
 		}
 		/*article h1 a:hover:after{
 		 content:  "\203A";
@@ -45,8 +55,13 @@
 		}
 		*/
 		article p{
-			margin: 0.2em 0;
-			line-height: 1.3em;
+			color: #333;
+			margin: 0;
+			line-height: 1.6em;
+			-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.06);
+			padding: 20px;
+			background: white;
+			border-top: 1px solid silver;
 		}
 		article p span{
 			color: gray;
@@ -56,8 +71,39 @@
 		img{
 			display: block;
 			width: 100%;
-			margin: 10px 0; 
-			border: 1px solid silver;
+			-webkit-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.06);
+		}
+		footer{
+			margin: 7em 0;
+			padding: 1em 0 0 0;
+			border-top: 1px solid silver;
+			text-align: center;
+		}
+		footer ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: -webkit-flex;
+			justify-content: center;
+
+		}
+		footer ul li{
+			display: inline-block;
+			margin: 1px;
+		}
+		footer p{
+			font-weight: bold;
+		}
+		li a{
+			display: inline-block;
+			text-decoration: none;
+			padding: 10px; 
+			-webkit-transition: all 0.3s;
+			color: #529ecc;
+		}
+		li a:hover{
+			background: #B2D6EC; 
+			-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.06);			
 		}
 	</style>
 
@@ -67,16 +113,17 @@
 <div id="container">
 
 	<div id="header">
-		<h1>Francisco Hui</h1>
-		<p>UX Design &amp; Research</p>
+		<h1><a href="http://franciscohui.com" class="home">Francisco Hui</a></h1>
+		<p>UX designer &amp; researcher learning to code</p>
 	</div>
 
 	<section id="projects">
 
 			<!-- TO BE -->
 			<article>
-				<img src="https://raw.github.com/franciscohui/ui-patterns/master/img/01_to_be.png">
-
+				<a href="http://tobe.us">
+					<img src="https://raw.github.com/franciscohui/ui-patterns/master/img/01_to_be.jpg">
+				</a>
 				<p>
 					<a href="http://tobe.us">To Be</a> // A space and a set of tools to compose with all the senses of the internet. 
 					<span>UX design and usability research.</span>
@@ -86,7 +133,7 @@
 
 			<!-- MODA OPERANDI -->
 			<article>
-				<img src="https://raw.github.com/franciscohui/ui-patterns/master/img/02_moda.png">
+				<a href="http://modaoperandi.com"><img src="https://raw.github.com/franciscohui/ui-patterns/master/img/02_moda.jpg"></a>
 
 				<p>
 					<a href="http://modaoperandi.com">Moda Operandi</a> // Preorder looks straight from the runway.
@@ -97,7 +144,7 @@
 
 			<!-- SCHOLASTIC -->
 			<article>
-				<img src="https://raw.github.com/franciscohui/ui-patterns/master/img/03_storia.png">
+				<a href="https://itunes.apple.com/us/app/scholastic-storia/id491014756"><img src="https://raw.github.com/franciscohui/ui-patterns/master/img/03_storia.jpg"></a>	
 
 				
 				<p>
@@ -111,7 +158,7 @@
 
 			<!-- PSFK FUTURE OF RETAIL -->
 			<article>
-				<img src="https://raw.github.com/franciscohui/ui-patterns/master/img/04_psfk_future_of_retail.png">
+				<a href="http://www.psfk.com/publishing/future-of-retail"><img src="https://raw.github.com/franciscohui/ui-patterns/master/img/04_psfk_future_of_retail.png"></a>
 
 				<p>
 				<a href="http://www.psfk.com/publishing/future-of-retail">PSFK Future of Retail</a> // An 80 page report on consumer trends.
@@ -124,7 +171,7 @@
 			<!-- SIDE PROJECTS -->
 			<!-- TENTATIVELY -->
 			<article>
-				<img src="https://raw.github.com/franciscohui/ui-patterns/master/img/05_tentatively.png">
+				<a href="http://netted.net/2012/03/19/pressing-engagement/#toggled"><img src="https://raw.github.com/franciscohui/ui-patterns/master/img/05_tentatively.png"></a>
 
 				
 				<p>
@@ -137,7 +184,7 @@
 
 			<!-- INTERACTEES -->
 			<article>
-				<img src="https://raw.github.com/franciscohui/ui-patterns/master/img/06_interactees.jpg">
+				<a href="http://www.swiss-miss.com/2011/03/interactees.html"><img src="https://raw.github.com/franciscohui/ui-patterns/master/img/06_interactees.jpg"></a>
 
 				
 				<p><a href="http://www.swiss-miss.com/2011/03/interactees.html">Interactees</a> // T-shirts with a pin button for ambient self-expression.
@@ -145,11 +192,17 @@
 				</p>
 				
 			</article>
-
-
-
-
 	</section>
+ 
+	<footer>
+		<p><a href="http://franciscohui.com" class="home">Francisco Hui</a></p>
+		<ul>
+			<li><a href="http://twitter.com/franciscohui">Twitter</a></li>			
+			<li><a href="http://codepen.io/francisco">CodePen</a></li>			
+			<li><a href="https://github.com/franciscohui">GitHub</a></li>
+		</ul>
+	</footer>
+
 </div>
 
 </body>
