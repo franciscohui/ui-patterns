@@ -41,6 +41,7 @@ ul.transition-list-category {
 	height: 350px;
   white-space: nowrap;
   overflow: auto; 
+	-webkit-overflow-scrolling: touch;
 }
 .transition-list-category li{
 	display: inline-block;
