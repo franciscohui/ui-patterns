@@ -10,8 +10,6 @@ a{
 #container{
 	display: block;
 	width: 1024px;
-	height: 768px;
-	background: pink;
 	margin: 0 auto;
 }
 
@@ -35,7 +33,6 @@ nav{
 }
 #ui-transition-list{
 	display: block;
-	height: 725px;
 	overflow: auto;
 }
 ul.transition-list-category {
@@ -54,4 +51,11 @@ ul.transition-list-category {
 	width: 300px;	
 	background: silver;
 	margin: 5px;
+	text-align: center;
+	line-height: 5em;
+	font-size: 3em;
+	color: gray;
+}
+.transition-list-category li a:active{
+	background: #333;
 }
