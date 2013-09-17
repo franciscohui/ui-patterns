@@ -12,7 +12,11 @@ a{
 	width: 1024px;
 	margin: 0 auto;
 }
-
+nav{
+	display: block;
+	position: fixed;
+	width: inherit;
+}
 nav ul li{
 	display: inline-block;
 }
@@ -34,6 +38,7 @@ nav{
 #ui-transition-list{
 	display: block;
 	overflow: auto;
+	padding: 44px 0 0 0;
 }
 ul.transition-list-category {
 	display: block;
