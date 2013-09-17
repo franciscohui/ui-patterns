@@ -65,3 +65,15 @@ ul.transition-list-category {
 .transition-list-category li a:active{
 	background: #333;
 }
+
+/*PAGE FADE IN*/
+
+#ui-transition-list{
+  display: block;
+  -webkit-animation: rock 0.3s ease-in-out;
+}
+
+@-webkit-keyframes rock {
+   0% {opacity: 0; zoom: .9;}
+  100% {opacity: 1; zoom: 1;}
+}
