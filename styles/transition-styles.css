@@ -40,6 +40,9 @@ nav{
 	overflow: auto;
 	padding: 44px 0 0 0;
 }
+.content-wrapper{
+	padding: 44px 0 0 0;
+}
 ul.transition-list-category {
 	display: block;
 	width: 100%;
@@ -76,4 +79,11 @@ ul.transition-list-category {
 @-webkit-keyframes rock {
    0% {opacity: 0; zoom: .9;}
   100% {opacity: 1; zoom: 1;}
+}
+
+.column{
+	display: inline-block;
+	width: 300px;
+	background: pink;
+	height: 400px;
 }
